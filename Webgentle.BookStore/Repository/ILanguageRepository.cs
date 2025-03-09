@@ -4,6 +4,7 @@ using Webgentle.BookStore.Models;
 
 namespace Webgentle.BookStore.Repository
 {
+
     public interface ILanguageRepository
     {
         Task<List<LanguageModel>> GetLanguages();

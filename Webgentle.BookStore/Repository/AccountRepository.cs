@@ -26,11 +26,12 @@ namespace Webgentle.BookStore.Repository
             IConfiguration configuration)
         {
             _userManager = userManager;
-            _signInManager = signInManager;
             _roleManager = roleManager;
             _userService = userService;
             _emailService = emailService;
             _configuration = configuration;
+            _signInManager = signInManager;
+
         }
 
         public async Task<ApplicationUser> GetUserByEmailAsync(string email)
